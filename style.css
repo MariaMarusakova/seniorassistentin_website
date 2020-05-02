@@ -1,0 +1,42 @@
+body {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    grid-column: 1 / 4;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 250px;
+    padding: 2em;
+}
+
+.menu-item {
+    font-family: Verdana, Times, serif;
+    font-size: 48px;
+    font-weight: normal;
+    padding: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-item.active,
+.menu-item:hover {
+    color: grey;
+    text-decoration: revert;
+}
+
+.circle-dec {
+    color: #502285;
+    vertical-align: super;
+}
+
+.content {
+    font-size: 24px;
+    width: 40em;
+    text-align: center;
+}
