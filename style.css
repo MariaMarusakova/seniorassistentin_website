@@ -73,6 +73,11 @@ body {
     background: linear-gradient(137deg, rgba(233,233,233,0.3) 0%, rgba(200,200,200,0.3) 50%);
 }
 
+.wide-panel-light-grey {
+    background: linear-gradient(137deg, rgba(233,233,233,0.9) 0%, rgba(200,200,200,0.0) 50%);
+}
+
+.wide-panel-light-grey h3,
 .wide-panel-grey h3 {
     color: #1D3557;
 }
@@ -185,6 +190,10 @@ td {
     display: flex;
 }
 
+.includes div:first-child {
+    max-width: 45%;
+}
+
 .service-panel {
     margin-bottom: 70px;
 }
@@ -214,8 +223,6 @@ td {
 
 .boxes > li:nth-child(1) {
     border-color: #AFADC6;
-    margin-left: 100px;
-    margin-top: 40px;
 }
 
 .boxes > li:nth-child(1) h4 {
@@ -238,7 +245,6 @@ td {
 }
 .boxes > li:nth-child(4) {
     border-color: #BC9D90;
-    margin-top: -125px;
 }
 
 .boxes > li:nth-child(4) h4 {
@@ -257,6 +263,7 @@ mark {
     position: absolute;
     right: 0;
     height: 732px;
+    z-index: -1;
 }
 
 .ubermich {
@@ -292,4 +299,43 @@ mark {
 .kontakt li {
     display: block;
     padding: 10px;
+}
+
+/* Different screen sizes */
+
+@media screen and (min-width: 992px) {
+    /* TODO mobile mode */
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .boxes > li {
+        min-width: 60%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    .menu a {
+        margin: 10px;
+    }
+
+    .boxes > li {
+        min-width: unset;
+    }
+
+    .boxes > li:nth-child(1) {
+        margin-left: 100px;
+        margin-top: 40px;
+    }
+
+    .boxes > li:nth-child(4) {
+        margin-top: -125px;
+    }
 }
