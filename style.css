@@ -187,3 +187,59 @@ td {
 .service-panel {
     margin-bottom: 70px;
 }
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.boxes > li {
+    border: 5px solid;
+    margin: 1.6% 2.15% 2.6%;
+    padding: 2.45% 3.6% 2.8% 3.6%;
+    border-radius: 35px;
+    line-height: 1.88;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.boxes > li h4 {
+    margin-bottom: 19px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.boxes > li:nth-child(1) {
+    border-color: #AFADC6;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.boxes > li:nth-child(1) h4 {
+    color: #3D3C47;
+}
+
+.boxes > li:nth-child(2) {
+    border-color: #F4EBD9;
+}
+
+.boxes > li:nth-child(2) h4 {
+    color: #6C6661;
+}
+.boxes > li:nth-child(3) {
+    border-color: #A8A894;
+}
+
+.boxes > li:nth-child(3) h4 {
+    color: #432E36;
+}
+.boxes > li:nth-child(4) {
+    border-color: #BC9D90;
+    margin-top: -125px;
+}
+
+.boxes > li:nth-child(4) h4 {
+    color: #463F3A;
+}
