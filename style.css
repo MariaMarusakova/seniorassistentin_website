@@ -58,6 +58,7 @@ body {
     color: black;
 }
 
+.menu a:hover,
 .menu a.active {
     color: #457B9D;
     border-color: #A8DADC;
@@ -65,6 +66,14 @@ body {
 
 .wide-panel {
     background: linear-gradient(137deg, rgba(69,123,157,1) 0%, rgba(29,53,87,1) 50%);
+}
+
+.wide-panel-grey {
+    background: linear-gradient(137deg, rgba(233,233,233,0.3) 0%, rgba(200,200,200,0.3) 50%);
+}
+
+.wide-panel-grey h3 {
+    color: #1D3557;
 }
 
 h2 {
@@ -127,8 +136,7 @@ h2 {
 }
 
 h3 {
-    margin-top: 60px;
-    margin-bottom: 40px;
+    padding-top: 60px;
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 501;
@@ -137,4 +145,45 @@ h3 {
 .intro {
     width: 65%;
     line-height: 1.9;
+}
+
+.inside-panel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.sa-overview th {
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+}
+
+.sa-overview th:first-child,
+.sa-overview td:first-child {
+    border-right: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+.check {
+    color: green;
+    font-size: 25px;
+}
+
+.cross {
+    color: red;
+    font-size: 25px;
+}
+
+.includes {
+    display: flex;
+}
+
+.service-panel {
+    margin-bottom: 70px;
 }
