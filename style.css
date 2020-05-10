@@ -296,9 +296,17 @@ mark {
     color: #F1FAEE;
 }
 
+.kontakt {
+    padding-bottom: 30px;
+}
+
 .kontakt li {
     display: block;
-    padding: 10px;
+}
+
+.kontakt b {
+    font-size: 25px;
+    vertical-align: middle;
 }
 
 /* Different screen sizes */
