@@ -13,10 +13,6 @@ body {
     margin-bottom: 60px;
 }
 
-.top-panel {
-    padding-bottom: 34px;
-}
-
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -26,14 +22,13 @@ body {
 
 .top-panel-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-right: -15px;
     margin-left: -15px;
 }
 
 .logo {
-    flex: 0 0 15%;
+    max-width: 15%;
 }
 
 .menu {
@@ -102,7 +97,7 @@ h2 {
     display: flex;
     flex-flow: column;
     width: 50%;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -311,33 +306,7 @@ mark {
 
 /* Different screen sizes */
 
-@media screen and (min-width: 992px) {
-    /* TODO mobile mode */
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-
-    .boxes > li {
-        min-width: 60%;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    .container {
-        max-width: 1440px;
-    }
-
-    .menu a {
-        margin: 10px;
-    }
-
-    .boxes > li {
-        min-width: unset;
-    }
-
+@media screen and (min-width: 1501px) {
     .boxes > li:nth-child(1) {
         margin-left: 100px;
         margin-top: 40px;
@@ -345,5 +314,105 @@ mark {
 
     .boxes > li:nth-child(4) {
         margin-top: -125px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .menu a {
+        margin-left: initial;
+        margin-right: initial;
+    }
+
+    .container {
+        max-width: 1240px;
+    }
+
+    .boxes > li {
+        min-width: 60%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .container {
+        max-width: 1150px;
+    }
+
+    .boxes > li {
+        min-width: 60%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .menu {
+        display: none;
+    }
+
+    .container {
+        max-width: 950px;
+    }
+
+    .full-photo {
+        opacity: 0.5;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .boxes > li {
+        min-width: 60%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu {
+        display: none;
+    }
+
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+        width: initial;
+        max-width: initial;
+    }
+
+    .photo {
+        position: initial;
+    }
+
+    .boxes > li {
+        min-width: 90%;
+    }
+
+    .full-photo {
+        opacity: 0.3;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .includes {
+        display: block;
+    }
+
+    .includes div:first-child {
+        max-width: 100%;
+    }
+
+    .inside-panel {
+        justify-content: unset;
+    }
+
+    .logo {
+        padding-top: 20px;
+    }
+
+    .overview-actions {
+        padding: initial;
+    }
+
+    .overview {
+        width: 100%;
     }
 }
