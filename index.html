@@ -189,14 +189,34 @@
             </p>
         </div>
         <div id="kontakt" class="wide-panel">
-            <div class="container white-text">
-                <h3>Kontakt</h3>
-                <ul class="kontakt intro">
-                    <li><h4>Ing. Lenka Marusakova<h4></li>
-                    <li><b>✉</b> lenka.marusakova@gmail.com</li>
-                    <li><b>☏</b> +43 699 1828 1677</li>
-                </ul>
+            <div class="container white-text kontakt-box">
+                <div>
+                    <h3>Kontakt</h3>
+                    <ul class="kontakt intro">
+                        <li><h4>Ing. Lenka Marusakova</h4></li>
+                        <li><b>✉</b> lenka.marusakova@gmail.com</li>
+                        <li><b>☏</b> +43 699 1828 1677</li>
+                    </ul>
+                    <a id="open-impressum" href="#">Impressum</a>
+                </div>
+                <div id="impressum" class="hidden">
+                    <h3>Impressum</h3>
+                    <ul class="impressum">
+                        <li><h4>Senioren Assistentin Wien</h4></li>
+                        <li>Ing. Lenka Marusakova</li>
+                        <li>Hackergasse 5, 1100 Wien</li>
+                        <li>GISA - Zahl 32761580</li>
+                        <li>lenka.marusakova@gmail.com</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </body>
 </html>
+
+<script type="text/javascript">
+document.getElementById("open-impressum").addEventListener("click", function(event){
+    document.getElementById("impressum").classList.remove("hidden");
+    event.preventDefault();
+});
+</script>

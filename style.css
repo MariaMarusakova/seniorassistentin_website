@@ -287,16 +287,30 @@ mark {
     padding-left: 25px;
 }
 
+.white-text a:link,
 .white-text {
     color: #F1FAEE;
+}
+
+.kontakt-box {
+    display: flex;
+}
+
+.kontakt-box > div {
+    width: 100%;
 }
 
 .kontakt {
     padding-bottom: 30px;
 }
 
+.impressum li,
 .kontakt li {
     display: block;
+}
+
+.hidden {
+    display: none;
 }
 
 .kontakt b {
